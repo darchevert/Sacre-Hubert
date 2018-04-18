@@ -1,0 +1,11 @@
+.navbar-fixed-bottom {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.collection {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
