@@ -9,3 +9,7 @@
   margin-top: 0px;
   margin-bottom: 10px;
 }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+}

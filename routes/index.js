@@ -1,59 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-/*var oss117pourvousservir = new Audio('audio/oss117pourvousservir.mp3');
-var commentblanquettebonne = new Media('audio/commentblanquettebonne.mp3');
-var faismoilamourpasenvie = new Media('audio/faismoilamourpasenvie.mp3');
-var vienscrotalequelquesheures = new Media('www/audio/vienscrotalequelquesheures.mp3');
-var harengramequin = new Media('harengramequin.mp3');
-var cocasse = new Media('audio/cocasse.mp3');
-var elleestbonne = new Media('audio/elleestbonne.mp3');
-var desmillions = new Media('audio/desmillions.mp3');
-var jaimelespanoramas = new Media('audio/jaimelespanoramas.mp3');
-var quietesvous = new Media('audio/quietesvous.mp3');
-var renecoty = new Media('audio/renecoty.mp3');
-var beurrerbiscotte = new Media('audio/beurrerbiscotte.mp3');
-var bienvenueaucaire = new Media('audio/bienvenueaucaire.mp3');
-var Bramard = new Media('audio/Bramard.mp3');
-var bruitblanc = new Media('audio/bruitblanc.mp3');
-var Camesertarien = new Media('audio/Camesertarien.mp3');
-var cestdrole = new Media('audio/cestdrole.mp3');
-var cesttoiarretez = new Media('audio/cesttoiarretez.mp3');
-var cestuneastuce = new Media('audio/cestuneastuce.mp3');
-var combienenfants2 = new Media('audio/combienenfants2.mp3');
-var commentestquoi = new Media('audio/commentestquoi.mp3');
-var confiancefemme = new Media('audio/confiancefemme.mp3');
-var coupdepoliche = new Media('audio/coupdepoliche.mp3');
-var fermersagueule = new Media('audio/fermersagueule.mp3');
-var gratin = new Media('audio/gratin.mp3');
-var imam = new Media('audio/imam.mp3');
-var inchallah = new Media('audio/inchallah.mp3');
-var jack = new Media('audio/jack.mp3');
-var jaimehuile = new Media('audio/jaimehuile.mp3');
-var jaimemebattre = new Media('audio/jaimemebattre.mp3');
-var joueraumalin = new Media('audio/joueraumalin.mp3');
-
-var lachetraitre = new Media('audio/lachetraitre.mp3');
-var laisserfairelamour = new Media('audio/laisserfairelamour.mp3');
-var nainemyope = new Media('audio/nainemyope.mp3');
-var onvaboireunverre = new Media('audio/onvaboireunverre.mp3');
-var onvadirequecestmoi = new Media('audio/onvadirequecestmoi.mp3');
-var piquettejack = new Media('audio/piquettejack.mp3');
-var poissonniere = new Media('audio/poissonniere.mp3');
-var pouletbordel = new Media('audio/pouletbordel.mp3');
-var prendspouruncretin = new Media('audio/prendspouruncretin.mp3');
-var pudeurhonore = new Media('audio/pudeurhonore.mp3');
-var sagiraitdegrandir = new Media('audio/sagiraitdegrandir.mp3');
-var smockingenalpaga = new Media('audio/smockingenalpaga.mp3');
-var sovieteponge = new Media('audio/sovieteponge.mp3');
-var tesmauvais = new Media('audio/tesmauvais.mp3');
-var tintouin = new Media('audio/tintouin.mp3');
-var tresfrancaismerci = new Media('audio/tresfrancaismerci.mp3');
-var tristesir = new Media('audio/tristesir.mp3');
-var unesuze = new Media('audio/unesuze.mp3');
-var voulezmourirbramar = new Media('audio/voulezmourirbramar.mp3');*/
-
-
 var punchlinesFav = [];
 
 var punchlines = [
@@ -114,7 +61,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/fav', function(req, res, next) {
-  res.render('fav', {  punchlinesFav });
+  res.render('fav', {  punchlines, punchlinesFav });
 });
 
 router.post('/add-fav', function(req, res, next) {
@@ -124,7 +71,6 @@ router.post('/add-fav', function(req, res, next) {
 });
 
 router.get('/delete-fav', function(req, res, next) {
-  console.log(req.body);
   punchlinesFav.splice(req.query.position, 1);
   res.render('fav', { punchlines, punchlinesFav });
 })

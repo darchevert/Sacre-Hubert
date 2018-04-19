@@ -18,7 +18,8 @@
           <div class="nav-wrapper">
             <form>
               <div class="input-field">
-                <input id="search" type="search" required>
+                <input id="search" type="search" required onkeyup="myFunction()" placeholder="Cherchez une réplique...">
+                <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.."> -->
                 <label class="label-icon" for="search"><i class="material-icons">search</i></label>
                 <i class="material-icons">close</i>
               </div>
@@ -27,20 +28,17 @@
         </nav>
       </div>
     </div>
+
   </div>
   <div>
-
-
     <div class="content">
       <div class="row" class="inlineBlock" id="collection-id">
-        <ul class="collection">
+        <ul class="collection" id="myUL">
           <%
     for(var i=0; i<punchlines.length; i++) {
     %>
             <li class="collection-item avatar grey lighten-5 player" class="collection-item">
               <img src="<%=punchlines[i].photo %>" alt=" " class="circle large">
-
-              <!-- <button class="btn-floating waves-effect waves-light right"><i class="material-icons orange">star_border</i></button> -->
               <span class="title"><%=punchlines[i].name %></span>
               <p>
                 <%=punchlines[i].punchline %>
@@ -49,12 +47,10 @@
                 <input type="hidden" name="photo" value="<%=punchlines[i].photo %>">
                 <input type="hidden" name="name" value="<%=punchlines[i].name %>">
                 <input type="hidden" name="punchline" value="<%=punchlines[i].punchline %>">
-                <audio type="audio" name="sound" src="<%=punchlines[i].sound %>"></audio>
-                <button type="submit" class="btn-floating waves-effect waves-light right"><i class="material-icons orange">star_border</i></button>
+                <input type="hidden" name="sound" value="<%=punchlines[i].sound %>"></input>
+                <button class="waves-effect waves-light btn right orange">Ajouter à mes préférées</button>
               </form>
             </li>
-
-
             <%
    }
    %>
@@ -63,17 +59,23 @@
 
     </div>
 
-    <div class="navbar-fixed-bottom">
-      <nav class="navbar orange">
-        <div class="nav-content">
-          <ul class="tabs tabs-transparent">
-            <li class="tab"><a class="active" href="/">Les répliques</a></li>
-            <li class="tab"><a href="/fav">Mes préférées</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+
   </div>
+
+  <div class="wrapper">
+  <div class="navbar-fixed-bottom">
+    <nav class="navbar orange">
+      <div class="nav-wrapper">
+        <ul class="tabs tabs-transparent">
+          <li class="tab"><a class="active" href="/">Les répliques</a></li>
+          <li class="tab"><a href="/fav">Mes préférées</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+</div>
+
   <script type="text/javascript" src="javascripts/script.js"></script>
   <!--JavaScript at end of body for optimized loading-->
   <script type="text/javascript " src="javascripts/materialize.min.js "></script>
