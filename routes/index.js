@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-var punchlinesFav = [];
 
 var punchlines = [
   {id: 1, punchline: "OSS117! Pour vous servir!", name: "Lucien Bramard / OSS117", photo: "/images/jean_dujardin.jpg", sound: "audio/oss117pourvousservir.mp3" },
@@ -55,9 +54,11 @@ var punchlines = [
   {id: 49, punchline: "Vous voulez mourir Bramard?!", name: "Raymond Pelletier", photo: "/images/francois_damiens.jpg", sound: "audio/voulezmourirbramar.mp3"},
   {id: 50, punchline: "Elle est bonne...", name: "Lucien Bramard / OSS117", photo: "/images/jean_dujardin.jpg", sound: "audio/elleestbonne.mp3"}]
 
-/* GET home page. */
+var punchlinesFav = [];
+
 router.get('/', function(req, res, next) {
-  res.render('index', { punchlines: punchlines });
+  console.log(punchlines);
+  res.render('index', { punchlines });
 });
 
 router.get('/fav', function(req, res, next) {
@@ -66,7 +67,6 @@ router.get('/fav', function(req, res, next) {
 
 router.post('/add-fav', function(req, res, next) {
   punchlinesFav.push(req.body);
-  console.log(punchlinesFav);
   res.render('index', { punchlines, punchlinesFav });
 });
 

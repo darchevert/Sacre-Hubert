@@ -31,9 +31,9 @@ for (var i = 0; i < ligne.length; i++) {
   })(ligne[i]));
 };
 
+
 function myFunction() {
-    // Declare variables
-    var input, filter, ul, li, p, i;
+    let input, filter, ul, li, p, i;
     input = document.getElementById('search');
     filter = input.value.toUpperCase();
     ul = document.getElementById("myUL");
