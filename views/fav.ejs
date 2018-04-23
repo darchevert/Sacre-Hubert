@@ -18,7 +18,6 @@
             <div class="nav-wrapper">
               <form>
                 <div class="input-field">
-                  <!-- <input id="search" type="search" required> -->
                   <input id="search" type="search" required onkeyup="myFunction()" placeholder="Cherchez une réplique..." >
                   <label class="label-icon" for="search"><i class="material-icons">search</i></label>
                   <i class="material-icons">close</i>
@@ -37,7 +36,7 @@
           %>
             <li class="collection-item avatar grey lighten-5 player" class="collection-item">
               <img src="<%=punchlinesFav[i].photo %>" alt=" " class="circle large">
-              <a href="/delete-fav?position=<%=i%>" class="waves-effect waves-light btn right orange">Supprimer de mes préférées</a>
+              <a href="/delete-fav?position=<%=i%>" class="waves-light btn right orange">Supprimer de mes préférées</a>
               <span class="title"><%=punchlinesFav[i].name %></span>
               <p><%=punchlinesFav[i].punchline %></p>
               <audio type="audio" name="sound" src="<%=punchlinesFav[i].sound %>"></audio>

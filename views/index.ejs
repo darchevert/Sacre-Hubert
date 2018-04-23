@@ -37,22 +37,25 @@
     %>
             <li class="collection-item avatar grey lighten-5 player" class="collection-item">
               <img src="<%=punchlines[i].photo %>" alt=" " class="circle large">
-              <div>
-                <p class="title">
+              <div class="col s6">
+                <span class="title">
                   <%=punchlines[i].name %>
-                </p>
+                </span>
                 <p>
                   <%=punchlines[i].punchline %>
                 </p>
-                <form action="/add-fav" method="POST">
-                  <input type="hidden" name="photo" value="<%=punchlines[i].photo %>">
-                  <input type="hidden" name="name" value="<%=punchlines[i].name %>">
-                  <input type="hidden" name="punchline" value="<%=punchlines[i].punchline %>">
-                  <input type="hidden" name="sound" value="<%=punchlines[i].sound %>">
-                  <audio type="hidden" name="sound" src="<%=punchlines[i].sound %>"></audio>
-                  <button class="waves-effect waves-light btn right orange">Ajouter à mes préférées</button>
-                </form>
-              </div>
+                  </div>
+                <div class="col s6">
+                  <form action="/add-fav" method="POST">
+                    <input type="hidden" name="photo" value="<%=punchlines[i].photo %>">
+                    <input type="hidden" name="name" value="<%=punchlines[i].name %>">
+                    <input type="hidden" name="punchline" value="<%=punchlines[i].punchline %>">
+                    <input type="hidden" name="sound" value="<%=punchlines[i].sound %>">
+                    <audio type="hidden" name="sound" src="<%=punchlines[i].sound %>"></audio>
+                    <button class="waves-light btn right orange">Ajouter à mes préférées</button>
+                  </form>
+                </div>
+
             </li>
             <%
    }
