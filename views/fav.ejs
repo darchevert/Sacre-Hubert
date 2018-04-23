@@ -36,7 +36,7 @@
           %>
             <li class="collection-item avatar grey lighten-5 player" class="collection-item">
               <img src="<%=punchlinesFav[i].photo %>" alt=" " class="circle large">
-              <a href="/delete-fav?position=<%=i%>" class="waves-light btn right orange">Supprimer de mes préférées</a>
+              <a href="/delete-fav?id=<%=punchlinesFav[i].id%>" class="waves-light btn right orange">Supprimer de mes préférées</a>
               <span class="title"><%=punchlinesFav[i].name %></span>
               <p><%=punchlinesFav[i].punchline %></p>
               <audio type="audio" name="sound" src="<%=punchlinesFav[i].sound %>"></audio>
@@ -51,7 +51,7 @@
         <nav class="nav orange">
           <div class="nav-content">
             <ul class="tabs tabs-transparent">
-              <li class="tab col s6"><a href="/">Les répliques</a></li>
+              <li class="tab col s6"><a href="/index">Les répliques</a></li>
               <li class="tab col s6"><a class="active" href="/fav">Mes préférées</a></li>
             </ul>
           </div>
