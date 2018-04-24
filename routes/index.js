@@ -97,12 +97,12 @@ router.get('/fav', function(req, res, next) {
    )
 });
 
-router.post('/add-fav', function(req, res, next) {
+router.get('/add-fav', function(req, res, next) {
   var newFav = new punchlinesModel ({
-    name: req.body.name,
-    punchline: req.body.punchline,
-    photo: req.body.photo,
-    sound: req.body.sound,
+    name: req.query.name,
+    punchline: req.query.punchline,
+    photo: req.query.photo,
+    sound: req.query.sound,
     user_id: req.session.user._id
     });
 

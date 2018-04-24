@@ -45,15 +45,19 @@
                   <%=punchlines[i].punchline %>
                 </p>
               </div>
+
               <div class="col s6">
-                <form action="/add-fav" method="POST">
+                <a href="/add-fav?name=<%=punchlines[i].name%>&punchline=<%=punchlines[i].punchline%>&photo=<%=punchlines[i].photo%>&sound=<%=punchlines[i].sound%>" class="right">
+                 <i id="toto" onclick="etoile()" class="small material-icons">star_border</i></a>
+                <audio type="hidden" name="sound" src="<%=punchlines[i].sound %>"></audio>
+                <!-- <form action="/add-fav" method="POST">
                   <input type="hidden" name="photo" value="<%=punchlines[i].photo %>">
                   <input type="hidden" name="name" value="<%=punchlines[i].name %>">
                   <input type="hidden" name="punchline" value="<%=punchlines[i].punchline %>">
                   <input type="hidden" name="sound" value="<%=punchlines[i].sound %>">
-                  <audio type="hidden" name="sound" src="<%=punchlines[i].sound %>"></audio>
-                  <button class="waves-light btn right orange">Ajouter à mes préférées</button>
-                </form>
+
+                  <button class="waves-light btn right orange">favoris</button>
+                </form> -->
               </div>
 
             </li>
@@ -76,8 +80,8 @@
       </nav>
     </div>
   </div>
-  <script type="text/javascript" src="javascripts/script.js"></script>
   <script type="text/javascript " src="javascripts/materialize.min.js "></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
 </body>
 
 </html>
