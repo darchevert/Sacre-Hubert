@@ -38,12 +38,12 @@
     %>
             <li class="collection-item avatar grey lighten-5 player" class="collection-item">
               <img src="<%=punchlines[i].photo %>" alt=" " class="circle large">
-              <div class="col s6">
+              <div class="col s10">
                 <p class="title"><%=punchlines[i].punchline %></p>
                 <span><%=punchlines[i].name %></span>
               </div>
 
-              <div class="col s6">
+              <div class="col s2">
                 <a href="/add-fav?name=<%=punchlines[i].name%>&punchline=<%=punchlines[i].punchline%>&photo=<%=punchlines[i].photo%>&sound=<%=punchlines[i].sound%>" class="right">
                  <i id="toto" onclick="etoile()" class="small material-icons">star_border</i></a>
                 <audio type="hidden" name="sound" src="<%=punchlines[i].sound %>"></audio>
