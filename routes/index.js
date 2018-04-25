@@ -94,10 +94,10 @@ router.get('/fav', function(req, res, next) {
        function (error, punchlinesFav) {
          res.render('fav', { punchlinesFav, user : req.session.user });
        }
-   )
+   );
 });
 
-router.get('/add-fav', function(req, res, next) {
+router.get('/add-fav', function(req, res, next){
   var newFav = new punchlinesModel ({
     name: req.query.name,
     punchline: req.query.punchline,
@@ -116,7 +116,7 @@ router.get('/add-fav', function(req, res, next) {
           )
         }
     );
-  res.render('index', { punchlines });
+  res.render('index', { punchlines, user : req.session.user });
 });
 
 router.get('/delete-fav', function(req, res, next) {

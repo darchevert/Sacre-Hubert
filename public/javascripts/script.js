@@ -1,5 +1,5 @@
-let ligne = document.getElementsByClassName('player');
-let joue = {
+var ligne = document.getElementsByClassName('player');
+var joue = {
   joue: false,
   element: null
 };
@@ -31,7 +31,7 @@ for (var i = 0; i < ligne.length; i++) {
 };
 
 function myFunction() {
-  let input,
+  var input,
     filter,
     ul,
     li,
@@ -55,7 +55,7 @@ function myFunction() {
 
 
 function etoile(){
-  let tata = document.getElementById('#toto');
+  var tata = document.getElementById('toto').innerHTML;
   console.log(tata.innerHTML);
 document.getElementById('toto').addEventListener("click", function(){
     document.getElementById("toto").innerHTML = "star";
