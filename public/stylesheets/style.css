@@ -25,6 +25,10 @@
   height: 40px;
 }
 
+.title{
+  font-weight: bold;
+}
+
 nav {
   height: 40px;
   line-height: 40px;

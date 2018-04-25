@@ -9,6 +9,7 @@
   <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 
+
 <body>
 
   <div class="wrapper">
@@ -38,12 +39,8 @@
             <li class="collection-item avatar grey lighten-5 player" class="collection-item">
               <img src="<%=punchlines[i].photo %>" alt=" " class="circle large">
               <div class="col s6">
-                <span class="title">
-                  <%=punchlines[i].name %>
-                </span>
-                <p>
-                  <%=punchlines[i].punchline %>
-                </p>
+                <p class="title"><%=punchlines[i].punchline %></p>
+                <span><%=punchlines[i].name %></span>
               </div>
 
               <div class="col s6">
