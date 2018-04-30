@@ -1,3 +1,7 @@
+.row .col {
+  padding: 0
+}
+
 .navbar-fixed-bottom {
   overflow: hidden;
   position: fixed;
@@ -12,9 +16,9 @@
 
 }
 
-.collection .collection-item.avatar {
+/* .collection .collection-item.avatar {
     min-height: 60px;
-}
+} */
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -34,7 +38,7 @@ nav {
   line-height: 40px;
 }
 
-}
+
 
 nav .button-collapse i {
   height: 40px;
