@@ -47,7 +47,7 @@ var punchlines = [
   {id: 16, punchline: "Qui êtes-vous?!", name: "Lucien Bramard / OSS117", photo: "/images/jean_dujardin.jpg", sound: "audio/quietesvous.mp3"},
   {id: 17, punchline: "C'est Monsieur René Coty", name: "Lucien Bramard / OSS117", photo: "/images/jean_dujardin.jpg", sound: "audio/renecoty.mp3"},
   {id: 18, punchline: "Bienvenue au Caire...", name: "Gerhard Moeller", photo: "/images/richard_sammel.jpg", sound: "audio/bienvenueaucaire.mp3"},
-  {id: 19, punchline: "Elle est bonne...", name: "Lucien Bramard / OSS117", photo: "/images/jean_dujardin.jpg", sound: "audio/elleestbonne.mp3"}];
+  {id: 19, punchline: "Elle est bonne...", name: "Lucien Bramard / OSS117", photo: "/images/jean_dujardin.jpg", sound: "audio/elleestbonne.mp3"},
   {id: 20, punchline: "J'ai réservé au nom de Bramard!", name: "Lucien Bramard / OSS117", photo: "/images/jean_dujardin.jpg", sound: "audio/Bramard.mp3"},
   {id: 21, punchline: "J'aime le bruit blanc de l'eau", name: "Lucien Bramard / OSS117", photo: "/images/jean_dujardin.jpg", sound: "audio/bruitblanc.mp3"},
   {id: 22, punchline: "Ca me sert à rien...", name: "Lucien Bramard / OSS117", photo: "/images/jean_dujardin.jpg", sound: "audio/Camesertarien.mp3"},
@@ -78,7 +78,7 @@ var punchlines = [
   {id: 47, punchline: "Très français", name: "Larmina El Akmar Betouch", photo: "/images/berenice_bejo.jpg", sound: "audio/tresfrancaismerci.mp3"},
   {id: 48, punchline: "Triste Sir!", name: "Raymond Pelletier", photo: "/images/francois_damiens.jpg", sound: "audio/tristesir.mp3"},
   {id: 49, punchline: "Une Suze!", name: "Lucien Bramard / OSS117", photo: "/images/jean_dujardin.jpg", sound: "audio/unesuze.mp3"},
-  {id: 50, punchline: "Vous voulez mourir Bramard?!", name: "Raymond Pelletier", photo: "/images/francois_damiens.jpg", sound: "audio/voulezmourirbramar.mp3"},
+  {id: 50, punchline: "Vous voulez mourir Bramard?!", name: "Raymond Pelletier", photo: "/images/francois_damiens.jpg", sound: "audio/voulezmourirbramar.mp3"}];
 
 router.get('/', function(req, res, next) {
   res.render('login');
