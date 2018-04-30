@@ -16,6 +16,7 @@
 
 }
 
+
 /* .collection .collection-item.avatar {
     min-height: 60px;
 } */
@@ -78,4 +79,8 @@ i{
 
 .signup{
     margin-bottom: 30px;
+}
+
+#loginbtn {
+  color: white;
 }
