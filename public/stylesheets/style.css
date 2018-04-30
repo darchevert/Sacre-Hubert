@@ -59,6 +59,7 @@ i{
   color:orange;
 }
 
+
 .logo{
   height: 30px;
   background-color:#FD5A21;
@@ -85,4 +86,9 @@ i{
 
 #loginbtn {
   color: white;
+}
+
+
+h4 {
+  text-align: center;
 }
