@@ -60,11 +60,13 @@ i{
 
 .logo{
   height: 30px;
+  background-color:#FD5A21;
 }
 
 .btn{
   padding: 5px;
 }
+
 
 #logo{
   height: 30px;
@@ -78,4 +80,8 @@ i{
 
 .signup{
     margin-bottom: 30px;
+}
+
+.orange{
+  background-color:#FD5A21;
 }
