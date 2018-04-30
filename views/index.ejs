@@ -43,9 +43,9 @@
                 <span><%=punchlines[i].name %></span>
               </div>
 
-              <div class="col s2">
+              <div class="col s1 offset-s1 right">
                 <a href="/add-fav?name=<%=punchlines[i].name%>&punchline=<%=punchlines[i].punchline%>&photo=<%=punchlines[i].photo%>&sound=<%=punchlines[i].sound%>" class="right">
-                 <i id="toto" onclick="etoile()" class="small material-icons">star_border</i></a>
+                 <i id="toto" onclick="etoile()" class="small material-icons right">add_box</i></a>
                 <audio type="hidden" name="sound" src="<%=punchlines[i].sound %>"></audio>
                 <!-- <form action="/add-fav" method="POST">
                   <input type="hidden" name="photo" value="<%=punchlines[i].photo %>">
@@ -65,17 +65,18 @@
       </div>
 
     </div>
-
+</div>
     <div class="navbar-fixed-bottom">
       <nav class="navbar orange">
         <div class="nav-content">
-          <ul class="tabs tabs-transparent">
+          <ul class="tabs tabs-transparent ">
+            <li class="tab col s6"><a class="active title" href="/index">Les répliques</a></li>
             <li class="tab col s6"><a href="/fav">Mes préférées</a></li>
           </ul>
         </div>
       </nav>
     </div>
-  </div>
+
   <script type="text/javascript " src="javascripts/materialize.min.js "></script>
   <script type="text/javascript" src="javascripts/script.js"></script>
 </body>
