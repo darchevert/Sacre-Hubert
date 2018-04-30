@@ -53,3 +53,25 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 i{
   color:orange;
 }
+
+.logo{
+  height: 30px;
+}
+
+.btn{
+  padding: 5px;
+}
+
+#logo{
+  height: 30px;
+}
+
+.div_signup{
+  margin-top: 20px;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.signup{
+    margin-bottom: 30px;
+}
